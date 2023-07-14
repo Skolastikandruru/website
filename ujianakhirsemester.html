@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Website HOSpitals</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap/plugins/datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
+<style>
+.navbar{
+	background:green;
+}
+.navbar a{
+	color: white;
+}
+.navbar-toggle{
+	background-color: white;
+	border: none;
+}
+.navbar-toggle .icon-bar{
+	background-color: green;
+}
+
+body{
+    background-color: #dee0e3;
+}
+.heading{
+    text-align: center;
+    margin-top: 25px;
+}
+.heading h1{
+    font-size: 50px;
+    color: #36455c;
+    margin-bottom: 10px;
+}
+.heading p{
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 50px;
+}
+.About{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+.About img{
+    flex: 0 50%;
+    max-width: 50%;
+    height: auto;
+}
+.content{
+    padding: 35px;
+}
+.content h2{
+    color: #36455c;
+    font-size: 24px;
+    margin: 15px 0px;
+}
+.content p{
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 15px 0px;
+}
+
+footer{
+    background-color: green;
+    color:white;
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+                           
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm justify-content-center">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<span class="icon-only"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">Hospital Indah</a></div>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li class="active"><a href="#Home">HOME <span class="sr-only"></span></a></li>
+<li><a href="#About">About</a></li>
+<li><a href="#Docters">Docters</a></li>
+<li><a href="#Contact">Contact</a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Hospitals<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="#">Rs pondok-Indah</a></li>
+<li><a href="#">Rs pondok-Puri Indah</a></li>
+<li><a href="#">Rs pondok Indah-Bentaro Jaya</a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li role="separator" class="divider"></li>
+<li><a href="#">Rs jakarta</a></li>
+<li><a href="#">Rs Bandung</a></li>
+<li><a href="#">Rs Medan</a></li>
+</ul>
+</li>
+</ul>
+<form class="navbar-form navbar-left">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="isikan keyword">
+</div>
+<button type="submit" class="btn btn-default">Cari</button>
+</form>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+<span class="glyphicon glyphicon-user" aria-hidden="true"></span> User <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="#">Profile</a></li>
+<li><a href="#">Logout</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>	
+<!---akhirnavbar-->
+<!---awalcarousel-->
+<div class="container">
+<div class="row">
+<div class="col-md-14">
+<div class="carousel slide" id="contoh-carousel" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#contoh-carousel" data-slide-to="0" class="active"></li>
+<li data-target="#contoh-carousel" data-slide-to="1"></li>
+<li data-target="#contoh-carousel" data-slide-to="2"></li>
+</ol>
+<div class="carousel-inner" role="listbox">
+<div class="item active"> 
+<img src="images/rumah1.jpeg"  width="1000px"  height="400px" alt="...">
+<div class="carousel-caption">
+<h1>RS Pondok Indah - Bintaro Jaya</h1>
+<p><a class="btn btn-info btn-lg" href="#" role="button">Daftar</a> 
+<a class="btn btn-danger btn-lg" href="#" role="button">Login</a></p>
+</div>
+</div>
+<div class="item">
+<img src="images/rumahruangan.jpg"  width="1000px"  height="400px" alt="...">
+<div class="carousel-caption">
+<p><a class="btn btn-primary btn-lg" href="#" role="button">Selengkapnya</a> 
+</div>
+</div>
+<div class="item">
+<img src="images/susi13.jpg"  width="1000px"  height="400px" alt="...">
+<div class="carousel-caption">
+<p><a class="btn btn-primary btn-lg" href="#" role="button">Masuk</a> 
+</div>
+</div>
+</div>
+<a class="left carousel-control" href="#contoh-carousel" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="sr-only">Prev</span>
+</a>
+<a class="right carousel-control" href="#contoh-carousel" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<br>
+<!--akhir carlousel-->
+<!--awal about-->
+<div class="heading">
+<h2>About</h2>
+<div id="About">
+<div class="About">
+<img src="images/susi7jpg.jpg">
+<div class="content">
+<h2>RS Pondok Indah Bintaro Jaya </h2>
+<p>RS Pondok Indah Bintaro Jaya berkomitmen untuk memberikan pelayanan kesehatan terdepan dengan didukung oleh teknologi medis terkini dan penerapan standar akreditasi nasional.</p>
+</div>
+</div>
+</div>
+<!--akhir about-->
+<div class="container">
+	<div class="row">
+		<div class="col-md-20">	
+		<P><h2>Data Docters</h2></P>
+		<ul class="nav nav-tabs tab-nav-right" role="tablist">
+			<li role="presentation" class="active"><a href="#list" data-toggle="tab">LIST</a></li>
+			<li role="presentation"><a href="#export" data-toggle="tab">EXPORT DATA</a></li>
+		</ul>
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="list">					
+			<table id="data-table" class="table table-bordered table-striped table-hover js-basic-example">
+				<thead>
+					<tr>
+						<th>Nama Lengkap</th>
+						<th>Jabatan</th>
+						<th>Penempatan</th>
+						<th>Tanggal Bergabung</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Alex</td>
+						<td>Dokter spesialis saraf</td>
+						<td>medan</td>
+						<td>2023/04/25</td>
+					</tr>
+					<tr>
+						<td>Jesika</td>
+						<td>Bandung</td>
+						<td>Dokter spesialis mata</td>
+						<td>2023/07/25</td>
+					</tr>
+					<tr>
+						<td>Ahmad</td>
+						<td>Dokter spesialis gigi</td>
+						<td>jakarta</td>
+						<td>2023/01/12</td>
+					</tr>
+					
+				</tbody>
+			</table>
+			</div>
+			<div role="tabpanel" class="tab-pane fade" id="export">
+			<h4>Pilihan export data</h4>           
+			<table class="table table-bordered table-striped table-hover dataTable js-exportable">
+				<thead>
+					<tr>
+						<th>Nama Lengkap</th>
+						<th>Jabatan</th>
+						<th>Penempatan</th>
+						<th>Tanggal Bergabung</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Alex</td>
+						<td>Dokter spesialis saraf</td>
+						<td>medan</td>
+						<td>2023/04/25</td>
+					</tr>
+					<tr>
+						<td>Jesika</td>
+						<td>Bandung</td>
+						<td>Dokter spesialis mata</td>
+						<td>2023/07/25</td>
+					</tr>
+					<tr>
+						<td>Ahmad</td>
+						<td>Dokter spesialis gigi</td>
+						<td>jakarta</td>
+						<td>2023/01/12</td>
+					</tr>
+					
+				</tbody>
+			</table>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+</div>			
+<!--awal  docters-->
+<div id="Docters">
+<div class="container">
+<div class="row">
+<div class="heading">
+<P><h2>Docters</h2></P>
+<div class="col-md-4">
+<img src="images/susi12.jpg" class="img-thumbnail" alt="Tampilan gambar dengan class img-thumbnail">
+<h4><p>Dr.Alex</p></h4>
+</div>
+<div class="col-md-4">
+<img src="images/susi11.jpg" class="img-thumbnail" alt="Tampilan gambar dengan class img-thumbnail">
+<h4><p>Dr.Jesika</p><h4>
+</div>
+<div class="col-md-4">
+<img src="images/susi9.jpg" class="img-thumbnail" alt="Tampilan gambar dengan class img-thumbnail">
+<h4><p>Dr.Ahmad</p></h4>
+</div>
+</div>
+</div>
+</div>
+<!--akhir docters-->
+<!--form--> 
+<div id="Contact">
+<div class="heading">
+<P><h2>Contact</h2></P>
+<div class="container">
+			<div class="row">
+				<div class="col-md-10">
+				<form class="form-horizontal" action="?" method="post">
+				  <div class="form-group has-success">
+					<label for="Email" class="col-sm-2 control-label">Email</label>
+					<div class="col-sm-10">
+						<div class="input-group">
+							<span class="input-group-addon">@</span>
+							<input type="text" class="form-control" id="Email" name="Email" placeholder="Isikan Email">
+							<span class="glyphicon glyphicon-home form-control-feedback"></span>
+						</div>
+					</div>
+				  </div>
+				  <div class="form-group has-success">
+					<label for="nama" class="col-sm-2 control-label">Nama</label>
+					<div class="col-sm-10">
+						<div class="input-group">
+							<span class="input-group-addon">#</span>
+							<input type="text" class="form-control" name="nama" placeholder="Isikan Nama Lengkap">
+							<span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+						</div>
+					</div>
+				  </div>
+				  <div class="form-group has-success">
+					<label for="alamat" class="col-sm-2 control-label">Alamat</label>
+					<div class="col-sm-10">
+						<div class="input-group">
+							<span class="input-group-addon">&&</span>
+							<textarea name="alamat"class="form-control" placeholder="Isikan Alamat Lengkap"></textarea>
+							<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+						</div>
+					</div>
+				  </div>
+				  <div class="col-sm-offset-2 col-sm-10">
+					  <button type="submit" class="btn btn-info">Simpan</button>
+					  <button type="reset" class="btn btn-info">Batal</button>
+				  </div>
+				</form>
+			</div>
+		</div>
+	</div>
+    </div> 
+	<br><br><br><br>
+	<!--footer awal--> 
+<footer>
+    <div class="container">
+        <span>created &copy;by Skolastica</span>
+        <span>2023</span>
+    </div>
+	<!--footer akhir-->     
+<script src="bootstrap/js/jQuery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/plugins/datatable/jquery.dataTables.js"></script>
+<script src="bootstrap/plugins/datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
+<script src="bootstrap/plugins/datatable/extensions/tables/jquery-datatable.js"></script>
+<script src="bootstrap/plugins/datatable/extensions/export/dataTables.buttons.min.js"></script>
+<script src="bootstrap/plugins/datatable/extensions/export/buttons.flash.min.js"></script>
+<script src="bootstrap/plugins/datatable/extensions/export/jszip.min.js"></script>
+<script src="bootstrap/plugins/datatable/extensions/export/pdfmake.min.js"></script>
+<script src="bootstrap/plugins/datatable/extensions/export/vfs_fonts.js"></script>
+<script src="bootstrap/plugins/datatable/extensions/export/buttons.html5.min.js"></script>
+<script src="bootstrap/plugins/datatable/extensions/export/buttons.print.min.js"></script>
+</body>
+</html>
